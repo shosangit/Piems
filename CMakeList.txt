@@ -1,0 +1,14 @@
+# Set the minimum version of CMake
+cmake_minimum_required(VERSION 3.23.2)
+
+# Set Project name and version
+project(MyProject VERSION 1.0 DESCRIPTION "Piems")
+
+# 包含路径设置
+include_directories(include)
+
+# 添加源文件目录
+add_subdirectory(./src)
+
+# 添加可执行文件或库
+add_library(EnergyBubbles STATIC EnergyBubbles.cpp)
